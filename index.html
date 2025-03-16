@@ -1,73 +1,198 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>Flores</title>
-  
-
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flores</title>
-    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <title>animaliah</title>
     <style>
         body {
-            background-color: #ffe6f2;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            font-family: 'Montserrat', sans-serif;
             margin: 0;
-            font-family: 'Shadows Into Light', cursive;
+            padding: 0;
+            line-height: 1.8;
+            color: #4a4a4a;
+            background-color: #f8f8f8;
+        }
+        header {
+            background-color: #34495e;
+            color: white;
             text-align: center;
+            padding: 2em 1em;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
         }
-        .container {
-            background-color: #fff;
+        main {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
             padding: 20px;
+            background-color: white;
             border-radius: 15px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-            max-width: 90%;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
         }
-        h1 {
-            color: #6a1b9a; /* Morado suave */
-            font-size: 2.5rem;
-            margin: 0;
+        section {
+            margin-bottom: 30px;
+        }
+        .cuidado {
+            border: 1px solid #e8e8e8;
+            padding: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            border-radius: 12px;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .cuidado:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+        }
+        .imagen-cuidados {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            margin-bottom: 20px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1.5em 0;
+            border-top: 1px solid #34495e;
+        }
+        .consejos ul {
+            list-style: none;
+            padding: 0;
+        }
+        .consejos li {
+            margin-bottom: 15px;
+        }
+        .consejos p {
+            color: #3498db;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .consejos p:hover {
+            color: #2980b9;
+        }
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+        h3 {
+            color: #34495e;
+            margin-bottom: 10px;
+            font-size: 1.4em;
         }
         p {
-            color: #6a1b9a; /* Morado suave */
-            font-size: 1.8rem;
-            margin: 10px 0 0;
+            color: #555;
+            font-size: 1em;
         }
-        .flower {
-            font-size: 4rem;
-            margin: 20px 0;
-            animation: float 3s ease-in-out infinite;
-        }
-        @keyframes float {
-            0%, 100% {
-                transform: translateY(0);
+
+        /* Media Queries para Responsividad */
+        @media (min-width: 600px) {
+            .cuidado {
+                flex-direction: row;
+                text-align: left;
             }
-            50% {
-                transform: translateY(-10px);
+            .imagen-cuidados {
+                margin-right: 20px;
+                margin-bottom: 0;
+            }
+        }
+
+        @media (min-width: 768px) {
+            header {
+                padding: 3em 0;
+            }
+            main {
+                padding: 30px;
+            }
+            .cuidado {
+                padding: 30px;
+            }
+            h2 {
+                font-size: 2em;
+            }
+            h3 {
+                font-size: 1.6em;
+            }
+            p {
+                font-size: 1.1em;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .cuidado {
+                margin-bottom: 25px;
+            }
+            .imagen-cuidados {
+                max-width: 250px;
             }
         }
     </style>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <h1>Unas flores para ti</h1>
-        <div class="flower">🌸🪻🌻🌼</div>
-        <p>Eres muy linda, Feliz día</p>
-        <p>att: andres ♡</p>
-    </div>
-</body>
-</html>
-<!-- partial -->
-  
+    <header>
+        <h1>CUIDADOS BÁSICOS PARA TU MASCOTA</h1>
+        <p>Garantizando el bienestar y la felicidad de tus mascotas</p>
+    </header>
+    <main>
+        <section class="introduccion">
+            <h2>Introducción</h2>
+            <p>Los animales de compañía son compañeros leales y miembros queridos de nuestras familias. Su bienestar depende de una atención integral que abarca desde la nutrición y la higiene hasta la salud y el ejercicio. En este sitio, te proporcionamos una guía completa para asegurar que tus mascotas disfruten de una vida plena y saludable.</p>
+            <p>Entender las necesidades específicas de cada especie y raza es fundamental para proporcionarles el cuidado adecuado. Aquí encontrarás información detallada y consejos prácticos para mantener a tus animales de compañía felices y saludables.</p>
+        </section>
+        <section class="cuidados">
+            <h2>Cuidados Esenciales</h2>
+            <div class="cuidado">
+                <img src="https://i.pinimg.com/474x/a7/ad/84/a7ad8413b5724e0896b49425abc6b56b.jpg" alt="Alimentacion" class="imagen-cuidados">
+                <div>
+                    <h3>Alimentación</h3>
+                    <p>La nutrición es la base de la salud de tu mascota. Elige alimentos de alta calidad, adecuados a su edad, tamaño y nivel de actividad. Consulta con tu veterinario para determinar las porciones y frecuencias adecuadas. Evita los alimentos tóxicos para animales, como el chocolate, las uvas y la cebolla. Establece horarios regulares para las comidas y asegúrate de que siempre tengan acceso a agua fresca y limpia.</p>
+                </div>
+            </div>
+            <div class="cuidado">
+                <img src="https://i.pinimg.com/736x/20/da/73/20da735fc6bcdde63d274a4fb504075a.jpg" alt="Higiene" class="imagen-cuidados">
+                <div>
+                    <h3>Higiene</h3>
+                    <p>La higiene regular previene enfermedades y mejora el bienestar de tu mascota. Baña a tu mascota con productos específicos para animales, cepilla su pelaje regularmente y limpia sus dientes para evitar la acumulación de sarro. No olvides cortar sus uñas y limpiar sus orejas con cuidado. Adapta la frecuencia de los baños a la especie y raza de tu mascota.</p>
+                </div>
+            </div>
+            <div class="cuidado">
+                <img src="https://i.pinimg.com/736x/b6/96/e5/b696e5282fa38114b7e028f4c646b947.jpg" alt="Salud" class="imagen-cuidados">
+                <div>
+                    <h3>Salud</h3>
+                    <p>Las visitas regulares al veterinario son cruciales para la salud preventiva. Asegúrate de que tu mascota esté al día con las vacunas y desparasitaciones. La prevención es clave para evitar enfermedades. Observa a tu mascota para detectar cambios en su comportamiento o apetito, y consulta al veterinario ante cualquier señal de alerta. Mantén un registro de las vacunas y tratamientos de tu mascota.</p>
+                </div>
+            </div>
+            <div class="cuidado">
+                <img src="https://i.pinimg.com/736x/56/65/3c/56653c2788110eb32b2928c988bf0105.jpg" alt="Ejercicio" class="imagen-cuidados">
+                <div>
+                    <h3>Ejercicio</h3>
+                    <p>El ejercicio diario es esencial para la salud física y mental de tu mascota. Los paseos, juegos y actividades al aire libre ayudan a mantener su peso ideal y reducen el estrés. Adapta el tipo y la duración del ejercicio a la edad y raza de tu mascota. Proporciona juguetes y actividades que estimulen su mente y cuerpo.</p>
+                </div>
+            </div>
+        </section>
+        <section class="consejos">
+            <h2>Consejos y Felicitaciones</h2>
+            <p>¡Felicitaciones por cuidar a tu mascota! Aquí tienes algunos consejos adicionales:</p>
+            <ul>
+                <li><p>Dedica tiempo diario a jugar y socializar con tu mascota para fortalecer el vínculo.</p></li>
+                <li><p>Crea un ambiente seguro y estimulante en tu hogar para tu mascota.</p></li>
+                <li><p>Aprende sobre el lenguaje corporal de tu mascota para entender sus necesidades y emociones.</p></li>
+                <li><p>Considera la adopción de otra mascota para brindarle compañía a tu animal.</p></li>
+                <li><p>No olvides celebrar los cumpleaños y ocasiones especiales de tu mascota con cariño y atención.</p></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Cuidados Animales</p>
+    </footer>
 </body>
 </html>

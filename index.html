@@ -9,28 +9,61 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-QJF0VRRFQN');
 </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>animaliah</title>
+    <title>Animaliah - Cuidados para tu Mascota</title>
     <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2ecc71;
+            --accent-color: #e74c3c;
+            --background-color: #f8f8f8;
+            --text-color: #2c3e50;
+            --header-color: #34495e;
+            --footer-color: #2c3e50;
+            --card-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            --transition-speed: 0.3s;
+        }
+
         body {
             font-family: 'Montserrat', sans-serif;
             margin: 0;
             padding: 0;
             line-height: 1.8;
-            color: #4a4a4a;
-            background-color: #f8f8f8;
+            color: var(--text-color);
+            background-color: var(--background-color);
         }
+
         header {
-            background-color: #34495e;
+            background-color: var(--header-color);
             color: white;
             text-align: center;
             padding: 2em 1em;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            box-shadow: var(--card-shadow);
         }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: var(--primary-color);
+            padding: 1em;
+            box-shadow: var(--card-shadow);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+            transition: color var(--transition-speed);
+        }
+
+        nav a:hover {
+            color: var(--secondary-color);
+        }
+
         main {
             width: 90%;
             max-width: 1200px;
@@ -38,11 +71,13 @@
             padding: 20px;
             background-color: white;
             border-radius: 15px;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            box-shadow: var(--card-shadow);
         }
+
         section {
             margin-bottom: 30px;
         }
+
         .cuidado {
             border: 1px solid #e8e8e8;
             padding: 20px;
@@ -52,12 +87,14 @@
             align-items: center;
             text-align: center;
             border-radius: 12px;
-            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            transition: transform var(--transition-speed), box-shadow var(--transition-speed);
         }
+
         .cuidado:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+            box-shadow: var(--card-shadow);
         }
+
         .imagen-cuidados {
             width: 100%;
             max-width: 200px;
@@ -67,41 +104,57 @@
             border-radius: 12px;
             box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
         }
+
         footer {
-            background-color: #2c3e50;
+            background-color: var(--footer-color);
             color: white;
             text-align: center;
             padding: 1.5em 0;
-            border-top: 1px solid #34495e;
+            border-top: 1px solid var(--header-color);
         }
+
         .consejos ul {
             list-style: none;
             padding: 0;
         }
+
         .consejos li {
             margin-bottom: 15px;
         }
+
         .consejos p {
-            color: #3498db;
+            color: var(--primary-color);
             text-decoration: none;
-            transition: color 0.3s ease;
+            transition: color var(--transition-speed);
         }
+
         .consejos p:hover {
-            color: #2980b9;
+            color: var(--secondary-color);
         }
+
         h2 {
-            color: #2c3e50;
+            color: var(--header-color);
             margin-bottom: 20px;
             font-size: 1.8em;
         }
+
         h3 {
-            color: #34495e;
+            color: var(--primary-color);
             margin-bottom: 10px;
             font-size: 1.4em;
         }
+
         p {
-            color: #555;
+            color: var(--text-color);
             font-size: 1em;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .visible {
+            display: block;
         }
 
         /* Media Queries para Responsividad */
@@ -153,13 +206,21 @@
         <h1>CUIDADOS BÁSICOS PARA TU MASCOTA</h1>
         <p>Garantizando el bienestar y la felicidad de tus mascotas</p>
     </header>
+    <nav>
+        <a href="#introduccion">Inicio</a>
+        <a href="#cuidados">Cuidados</a>
+        <a href="#consejos">Consejos</a>
+        <a href="#sobre-nosotros">Sobre Nosotros</a>
+        <a href="#politica-privacidad">Política de Privacidad</a>
+        <a href="#terminos-servicio">Términos de Servicio</a>
+    </nav>
     <main>
-        <section class="introduccion">
+        <section id="introduccion" class="introduccion">
             <h2>Introducción</h2>
             <p>Los animales de compañía son compañeros leales y miembros queridos de nuestras familias. Su bienestar depende de una atención integral que abarca desde la nutrición y la higiene hasta la salud y el ejercicio. En este sitio, te proporcionamos una guía completa para asegurar que tus mascotas disfruten de una vida plena y saludable.</p>
             <p>Entender las necesidades específicas de cada especie y raza es fundamental para proporcionarles el cuidado adecuado. Aquí encontrarás información detallada y consejos prácticos para mantener a tus animales de compañía felices y saludables.</p>
         </section>
-        <section class="cuidados">
+        <section id="cuidados" class="cuidados">
             <h2>Cuidados Esenciales</h2>
             <div class="cuidado">
                 <img src="https://i.pinimg.com/474x/a7/ad/84/a7ad8413b5724e0896b49425abc6b56b.jpg" alt="Alimentacion" class="imagen-cuidados">
@@ -190,7 +251,7 @@
                 </div>
             </div>
         </section>
-        <section class="consejos">
+        <section id="consejos" class="consejos">
             <h2>Consejos y Felicitaciones</h2>
             <p>¡Felicitaciones por cuidar a tu mascota! Aquí tienes algunos consejos adicionales:</p>
             <ul>
@@ -201,9 +262,38 @@
                 <li><p>No olvides celebrar los cumpleaños y ocasiones especiales de tu mascota con cariño y atención.</p></li>
             </ul>
         </section>
+        <section id="sobre-nosotros" class="sobre-nosotros hidden">
+            <h2>Sobre Nosotros</h2>
+            <p>Somos un equipo de amantes de los animales dedicados a proporcionar información valiosa y recursos para el cuidado de mascotas. Nuestra misión es ayudar a los dueños de mascotas a brindar el mejor cuidado posible a sus compañeros peludos.</p>
+            <p>Nuestro equipo está compuesto por veterinarios, entrenadores de mascotas y expertos en comportamiento animal. Trabajamos juntos para ofrecerte consejos prácticos y soluciones efectivas para el cuidado de tus mascotas.</p>
+        </section>
+        <section id="politica-privacidad" class="politica-privacidad hidden">
+            <h2>Política de Privacidad</h2>
+            <p>En Animaliah, respetamos tu privacidad y nos comprometemos a proteger tus datos personales. Esta política explica cómo recopilamos, usamos y protegemos tu información.</p>
+            <p>Recopilamos información personal como tu nombre, dirección de correo electrónico y datos de contacto cuando te registras en nuestro sitio o nos contactas directamente. Utilizamos esta información para mejorar nuestros servicios y proporcionarte contenido personalizado.</p>
+            <p>No compartimos tu información personal con terceros sin tu consentimiento, excepto cuando sea necesario para cumplir con la ley o proteger nuestros derechos.</p>
+        </section>
+        <section id="terminos-servicio" class="terminos-servicio hidden">
+            <h2>Términos de Servicio</h2>
+            <p>Al utilizar nuestro sitio web, aceptas nuestros términos y condiciones. Por favor, lee detenidamente estos términos antes de usar nuestros servicios.</p>
+            <p>El contenido de este sitio es para fines informativos y no debe considerarse como asesoramiento profesional. No nos hacemos responsables de cualquier daño o pérdida resultante del uso de la información proporcionada en este sitio.</p>
+            <p>Nos reservamos el derecho de modificar estos términos en cualquier momento. Te recomendamos revisar esta página periódicamente para estar al tanto de cualquier cambio.</p>
+        </section>
     </main>
     <footer>
         <p>&copy; 2025 Cuidados Animales</p>
     </footer>
+    <script>
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelectorAll('section').forEach(section => {
+                    section.classList.add('hidden');
+                });
+                const targetSection = document.querySelector(this.getAttribute('href'));
+                targetSection.classList.remove('hidden');
+            });
+        });
+    </script>
 </body>
 </html>
